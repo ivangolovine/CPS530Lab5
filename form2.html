@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta name="LAB5" content="LAB 5 Ivan Golovine"/>
+    <meta http-equiv="refresh" content="60"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Lab 5</title>
+    <style>
+        body {
+	        font-family: Roboto, sans-serif;
+	        font-size: 16px;
+	        text-align: center;
+            background-color: rgb(94, 223, 240);
+        }
+        #title {
+            color: rgb(170, 35, 248);
+            text-align: center;
+            }
+        #main {
+	        height: auto;
+     	    width: 600px;
+     	    margin: 10px auto;
+     	    background: white;
+     	    padding: 1px;
+     	    box-shadow: 0 0 10px rgba(0,0,0,.1);
+     	    border-radius: 17px;
+	        transition: ease all 0.25s;
+        } 
+        .popup:hover {
+            transform: scale(1.10);
+            transition: 0.15s 
+        }
+        .button {
+    	    border-radius: 8px;
+     	    border: none;
+	        background-color: #10b1f65b;
+	        color: rgb(185, 160, 50);
+     	    font-size: 14px;
+     	    text-align: center;
+     	    padding: 3px 3px;
+     	    cursor: pointer;
+        }          
+    </style>
+</head>
+<body>
+    <h3 id="title">Lab 5 Part 2</h3>
+    <div id="main">
+    <p style ="font-size: 16px; color: rgb(82, 199, 141);">Select a Location and Date</p>
+    <form action="lab5pt3.php" method="post">
+        <div><label for="year">Choose a Year:</label></div>
+        <select name="year" id="year">
+            <optgroup label="Year"></optgroup>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </optgroup>
+    </select>
+        <div><label for="location">Choose a Location:</label></div>
+        <select name="location" id="location">
+                    <optgroup label="Locations">
+                    <option value="Alberta">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Quebec">Quebec</option>
+                    </optgroup>
+                    </select>
+        <br><br>
+        <input class = "popup button" type="submit" value="Show Images">
+        <br><br>
+    </form>
+</div>
+</body>
+
